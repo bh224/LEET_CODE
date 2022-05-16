@@ -1,4 +1,4 @@
-#125. Valid Palindrome
+# 125. Valid Palindrome
 
 # Input: s = "A man, a plan, a canal: Panama"
 # Output: true
