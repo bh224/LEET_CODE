@@ -1,3 +1,3 @@
 # LEET_CODE
-✍ learning algorithm
+✍ learning algorithm</br>
 📘 refering to "Python Algorithm Interview" 
