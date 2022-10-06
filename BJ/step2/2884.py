@@ -9,6 +9,16 @@
 H, M = map(int, input().split())
 
 # H = 0 일때
+if H == 0:
+    if M == 0 or M-45 < 0:
+        print(23, 60+(M-45))
+# H != 0 일때
+else:
+    if M == 0 or M-45 < 0:
+        print(H-1, 60+(M-45))
+    else:
+        print(H, M-45)
+# H = 0 일때
 
 # 2
 H, M = map(int, input().split())
