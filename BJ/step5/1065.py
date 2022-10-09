@@ -6,19 +6,19 @@
 """
 
 #1 
-# def main(x):
-#     count = 0
-#     for i in range(1, x + 1):
-#         if len(str(i)) <= 2:
-#             count += 1
-#         else:  # 3자리수인 경우
-#             nums = list(map(int, str(i)))
-#             if nums[1] - nums[0] == nums[2] - nums[1]:
-#                 count += 1
-#     return count
+def main(x):
+    count = 0
+    for i in range(1, x + 1):
+        if len(str(i)) <= 2:
+            count += 1
+        else:  # 3자리수인 경우
+            nums = list(map(int, str(i)))
+            if nums[1] - nums[0] == nums[2] - nums[1]:
+                count += 1
+    return count
 
-# num = int(input())
-# print(main(num))
+num = int(input())
+print(main(num))
 
 
 
