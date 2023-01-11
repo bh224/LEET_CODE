@@ -13,12 +13,11 @@ import math
 
 start = time.time()
 
-M = 1
-N = 1000
-square = int(N**0.5)+1 #5
+M, N = map(int, input().split())
+square = int(N**0.5)+1 
 
 below = [x for x in range(M, square+1)] 
-over = [y for y in range(square+1, N+1)] #[6~16]
+over = [y for y in range(square+1, N+1)] 
 
 
 # 소수판별함수
@@ -30,7 +29,7 @@ def is_prime(n):
 
 # 배수제외함수
 def is_multi(n):
-  for i in range(len(over)): #index
+  for i in range(len(over)): 
     if over[i] == 0:
       continue
     if over[i] % n == 0:
