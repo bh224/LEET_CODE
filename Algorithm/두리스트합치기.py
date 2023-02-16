@@ -48,7 +48,7 @@ c = []
 p1=p2 = 0
 
 while p1 < n and p2<m:
-    if a[p1] < = b[p2]:
+    if a[p1] <= b[p2]:
         c.append(a[p1])
         p1 += 1
     else:
