@@ -5,16 +5,16 @@ C마리의 말이 있고 각 마구간에는 말 한마리만 넣을 수 있고 
 첫 째줄에 N과 C가 주어지고
 N개의 줄에 걸쳐 마구간의 좌표가 하나씩 주어진다다
 """
-# n,c = map(int, input().split())
-# a = []
-# for _ in range(n):
-#     num = int(input())
-#     a.append(num)
-# a.sort()
+n,c = map(int, input().split())
+a = []
+for _ in range(n):
+    num = int(input())
+    a.append(num)
+a.sort()
 
-n = 5
-c = 3
-a = [1,2,4,8,9]
+# n = 5
+# c = 3
+# a = [1,2,4,8,9]
 
 
 def is_max(distance):
