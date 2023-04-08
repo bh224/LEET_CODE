@@ -11,7 +11,7 @@ bars = input()
 
 # bars = "(((()(()()))(())()))(()())"
 
-# 1
+# 1 -> 시간초과
 stack = []
 total = 0
 
@@ -26,6 +26,18 @@ for i in range(len(bars)):
     elif bars[i] == ")" and bars[i-1] !="(":
         bar = stack.pop()
         total += bar
+
+print(total)
+
+# 1-1
+for i in range(len(bars)):
+    if bars[i] == "(" and bars[i+1] != ")":
+        stack.append(bars[i])
+    elif bars[i] == "(" and bars[i+1] == ")" and stack:
+        total += len(stack)
+    elif bars[i] == ")" and bars[i-1] !="(":
+        bar = stack.pop()
+        total += 1
 
 print(total)
 
