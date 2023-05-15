@@ -1,10 +1,10 @@
 """
 후위연산식이 주어지면 연산한 결과를 출력하시오
 """
-from curses.ascii import isxdigit
 
 
-nums = "352+*9-"
+# nums = "352+*9-"
+nums = input()
 stack = []
 
 for i in nums:
